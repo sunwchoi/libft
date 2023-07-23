@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_dlstlast.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sunwchoi <sunwchoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 20:10:47 by sunwchoi          #+#    #+#             */
-/*   Updated: 2023/07/23 17:39:35 by sunwchoi         ###   ########.fr       */
+/*   Created: 2022/03/29 20:13:09 by sunwchoi          #+#    #+#             */
+/*   Updated: 2023/07/23 17:43:04 by sunwchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+t_dlist	*ft_dlstlast(t_dlist *dlst)
 {
-	t_list	*temp;
-
-	while (*lst)
-	{
-		del((*lst)->content);
-		temp = *lst;
-		*lst = (*lst)->next;
-		free(temp);
-	}
+	if (!dlst)
+		return (dlst);
+	while (dlst->next)
+		dlst = dlst->next;
+	return (dlst);
 }
