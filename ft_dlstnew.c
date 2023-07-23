@@ -6,7 +6,7 @@
 /*   By: sunwchoi <sunwchoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 20:15:05 by sunwchoi          #+#    #+#             */
-/*   Updated: 2023/07/23 17:43:16 by sunwchoi         ###   ########.fr       */
+/*   Updated: 2023/07/23 17:50:37 by sunwchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ t_dlist	*ft_dlstnew(void *content)
 		return (NULL);
 	ret->content = content;
 	ret->next = NULL;
+	ret->pre = NULL;
 	return (ret);
 }

@@ -6,7 +6,7 @@
 /*   By: sunwchoi <sunwchoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 20:08:48 by sunwchoi          #+#    #+#             */
-/*   Updated: 2023/07/23 17:42:31 by sunwchoi         ###   ########.fr       */
+/*   Updated: 2023/07/23 17:55:08 by sunwchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ void	ft_dlstadd_back(t_dlist **dlst, t_dlist *new)
 		while (temp->next)
 			temp = temp->next;
 		temp->next = new;
+		new->pre = temp;
 	}
 }
