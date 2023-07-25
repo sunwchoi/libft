@@ -6,7 +6,7 @@
 /*   By: sunwchoi <sunwchoi@student.42seoul.>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/17 13:09:59 by sunwchoi          #+#    #+#             */
-/*   Updated: 2023/07/23 17:41:38 by sunwchoi         ###   ########.fr       */
+/*   Updated: 2023/07/25 15:42:16 by sunwchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ typedef struct s_dlist
 	struct s_dlist	*pre;
 }	t_dlist;
 
+t_dlist	*ft_dlstgo(t_dlist *pos, size_t len);
+t_dlist	*ft_dlstback(t_dlist *pos, size_t len);
 t_dlist	*ft_dlstnew(void *content);
 void	ft_dlstadd_front(t_dlist **lst, t_dlist *);
 int		ft_dlstsize(t_dlist *lst);

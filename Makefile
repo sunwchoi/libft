@@ -6,7 +6,7 @@
 #    By: sunwchoi <sunwchoi@student.42seoul.>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/01 15:18:01 by sunwchoi          #+#    #+#              #
-#    Updated: 2023/07/23 17:45:45 by sunwchoi         ###   ########.fr        #
+#    Updated: 2023/07/25 15:42:36 by sunwchoi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,9 @@ RSCS_B =	ft_lstadd_back.c \
 			ft_dlstlast.c \
 			ft_dlstmap.c \
 			ft_dlstnew.c \
-			ft_dlstsize.c
+			ft_dlstsize.c \
+			ft_dlstgo.c \
+			ft_dlstback.c
 OBJS = $(RSCS_M:%.c=%.o)
 OBJS_B = $(RSCS_B:%.c=%.o)
 
