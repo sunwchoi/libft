@@ -6,7 +6,7 @@
 /*   By: sunwchoi <sunwchoi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 15:40:23 by sunwchoi          #+#    #+#             */
-/*   Updated: 2023/07/25 15:41:29 by sunwchoi         ###   ########.fr       */
+/*   Updated: 2023/07/25 19:12:24 by sunwchoi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_dlist	*ft_dlstgo(t_dlist *pos, size_t len)
 {
-	while (len-- > 0)
+	while (--len > 0)
 		pos = pos->next;
 	return (pos);
 }
